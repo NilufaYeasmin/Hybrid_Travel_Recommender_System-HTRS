@@ -13,7 +13,7 @@ We have used the Expedia Hotel Recommendation dataset from Kaggle. The dataset, 
 
 # Notebooks Files
 
-# 1. Data_processing-Feature-eng.ipynb
+## 1. Data_processing-Feature-eng.ipynb
 Our first step was to clean and pre-process the data and perform exploratory analysis to get some interesting insights into the process of choosing a hotel.We identified the searches by each user belonging to a specific type of destination. This gave us some useful information about which hotel cluster was finally chosen over other hotel clusters explored by the user. One important observation to note is that few users might be travel agents and could explore multiple type of destinations at the same time. Feature engineering was performed and many new features such as duration, importance features, solo trip or family trip etc. were extracted from dataset. Moreover,we have 149 latent features for each destination; we have applied PCA to extract the most relevant dimensions.
 
 
