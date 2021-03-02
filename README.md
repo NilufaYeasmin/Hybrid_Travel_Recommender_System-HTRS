@@ -25,3 +25,6 @@ We have used Collaborative-Filtering model as the baseline model. Collaborative 
 
    -   Model-Based CF by using singular value decomposition (SVD) and Alternating Least Squares (ALS) method: Model-Based CF models are developed using machine learning algorithms to predict a user's rating of unrated items.  As per my understanding, the algorithms in this approach can further be broken down into 3 sub-types such as Clustering based algorithm, Matrix Factorization, Deep Learning. For example, we can mention few of these algorithms SVD, NMF, KNN etc.
 
+## 3. Hotel_Artificial_Neural_Network_Recommender.ipynb
+The aim of this notebook is to build a Recommendation System using with Artificial Neural Network by using Keras and TensorFlow library. First of all, we have created Embedding layer for both user and item and then combine’s embeddings using a dot product. In an embedding model the embeddings are the weights that are learned during training. Then, we have created a fully connected neural network with dense layer and we recommend hotel cluster to a user.
+
