@@ -40,4 +40,7 @@ presents a new framework for recommandation tasks, which combines the advantages
   
 ![Wide Deep_Model](https://user-images.githubusercontent.com/26486681/112028732-bb5d3300-8af5-11eb-945b-8dfbc53cdaac.png)
 
-  
+ 
+The wide and deep learning has two individual components. The wide network is a linear estimator or a single layer feed-forward network which assigns weights to each features and adds bias to them to model the matrix factorization method, as illustrated in above figure (left). These feature set includes raw input features and transformed. The deep component is a feed-forward neural network, as shown in above figure (right). The high dimensional categorical features are first convert into a low dimensional and dense real-valued vector, often referred as embeddings. The embedding vectors are initialized randomly and then the values are trained to minimize the final loss function. Then they are fed into the hidden layers with feed forward step. By jointly training the wide and deep network, it takes the weighted sum of the outputs from both wide model and deep model as the prediction value. However, we implemented the wide and deep model by using [shuoranly
+/
+DeepCTR-1](https://github.com/shuoranly/DeepCTR-1) package.
