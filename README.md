@@ -28,3 +28,10 @@ We have used Collaborative-Filtering model as the baseline model. Collaborative 
 ## 3. Hotel_Artificial_Neural_Network_Recommender.ipynb
 The aim of this notebook is to build a Recommendation System using with Artificial Neural Network by using Keras and TensorFlow library. First of all, we have created Embedding layer for both user and item and then combine’s embeddings using a dot product. In an embedding model the embeddings are the weights that are learned during training. Then, we have created a fully connected neural network with dense layer and we recommend hotel cluster to a user.
 
+## 4. Hotel_Wide&Deep_Recommender.ipynb 
+In the past few decades, deep learning has been tremendously successful in a wide range of applications and has shown state-of-the-art results in recommender architectures as well. In our baseline model (collaborative-filtering recommender system), we used only three features of our large dataset.Therefore, we decided to build hybrid recommender systems so that we can use more features of our large dataset which colud gives us more better recommendations. After going through some research paper, we decided to work on Wide & Deep Learning for Recommender Systems. Wide & Deep Learning [add link paper] presents a new framework for recommandation tasks, which combines the advantages of two different type of models: 
+
+  - Generalized Linear Models (logistic regression): efficient for large scale regression and classification tasks with sparse data, provide nice interpretations;
+  -  Deep Neural Networks: extract more complicate feature interactions and less feature engineering.
+
+  
