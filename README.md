@@ -38,7 +38,8 @@ Our first step was to clean and pre-process the data and perform exploratory ana
 
 
 ## 2. Hotel_Baseline_Recommender.ipynb
-The two main families of Recommendation system are Content-Based and Collaborative-Filtering models.
+The two main families of Recommendation system are Content-Based and Collaborative-Filtering models. Collaborative filtering methods are based on similarity from users and items interaction and content-based filtering methods calculate the similarity of attributes of an items and items. 
+
  
 
 Collaborative-based filter           |  Content-based filter
@@ -46,7 +47,7 @@ Collaborative-based filter           |  Content-based filter
 <img src="https://user-images.githubusercontent.com/26486681/112215239-5f6dd980-8bdd-11eb-8ada-8e338c6d2b49.png" width="500" />   |  <img src="https://user-images.githubusercontent.com/26486681/112215279-6e548c00-8bdd-11eb-9832-d5e2e42662c0.png" width="600" />  
 
 
-Collaborative filtering methods are based on similarity from users and items interaction and content-based filtering methods calculate the similarity of attributes of an items and items. We have used Collaborative-Filtering model as the baseline model. Collaborative Filtering can be divided into Memory-Based Collaborative Filtering and Model-Based Collaborative filtering. First of all, We have performed some data analysis for removing duplicates data and understand better user item rating distribution. We have created user-item matrices for train and test set. Then performed some data analysis on the rating matrix and transformed rating matrix into average rating matrix (per user/row). Then, two collaborative filtering models were implemented from scratch.
+We have used Collaborative-Filtering model as the baseline model. Collaborative Filtering can be divided into Memory-Based Collaborative Filtering and Model-Based Collaborative filtering. First of all, We have performed some data analysis for removing duplicates data and understand better user item rating distribution. We have created user-item matrices for train and test set. Then performed some data analysis on the rating matrix and transformed rating matrix into average rating matrix (per user/row). Then, two collaborative filtering models were implemented from scratch.
 
   -    Memory-Based CF by computing cosine similarity: Memory-Based Collaborative Filtering approaches can be divided into two main sections: user-item filtering   and item-item  filtering. In both cases, We created a rating matrix that builds from the entire dataset in order to make recommendations.
 
