@@ -14,7 +14,28 @@ We have used the Expedia Hotel Recommendation dataset from Kaggle. The dataset, 
 # Notebooks Files
 
 ## 1. Data_processing-Feature-eng.ipynb
-Our first step was to clean and pre-process the data and perform exploratory analysis to get some interesting insights into the process of choosing a hotel.We identified the searches by each user belonging to a specific type of destination. This gave us some useful information about which hotel cluster was finally chosen over other hotel clusters explored by the user. One important observation to note is that few users might be travel agents and could explore multiple type of destinations at the same time. Feature engineering was performed and many new features such as duration, importance features, solo trip or family trip etc. were extracted from dataset. Moreover,we have 149 latent features for each destination; we have applied PCA to extract the most relevant dimensions.
+Our first step was to clean and pre-process the data and perform exploratory analysis to get some interesting insights into the process of choosing a hotel. We identified the searches by each user belonging to a specific type of destination. This gave us some useful information about which hotel cluster was finally chosen over other hotel clusters explored by the user. One important observation to note is that few users might be travel agents and could explore multiple type of destinations at the same time. Feature engineering was performed and many new features such as duration, importance features, solo trip or family trip etc. were extracted from dataset. Moreover,we have 149 latent features for each destination; we have applied PCA to extract the most relevant dimensions. We observe that geographical location and the distance between user and the hotel (which we calculated using distance matrix completion method) are the most important features. Next, we visualize the correlation matrix between the features of the training set in Figure 1 and observe and observe following things: 
+
+
+![Co-relation](https://user-images.githubusercontent.com/26486681/112173212-9a0e4c80-8bb2-11eb-8c0d-ca986ce79812.PNG)
+
+
+
+-  hotel_cluster does not seem to have a strong (positive or negative) correlation with any other feature. Thus, methods which model linear relationship between features might not be very successful.
+
+- orig_destination_distance has a positive correlation with duration (constructed using srch_ci and srch _co), which means people who are planning for a long trip tend to go far away from the place of origin.
+
+- hotel_continent and posa_continent (which is from where the booking is done) are negatively correlated. This means that people tend to go to continents different from theirs for vacations.
+
+
+- duration seems to have a strong positive correlation with is_package. This means that people who tend to book hotel for longer duration usually choose hotels as a part of a package.
+
+- srch_destination_id has a strong correlation with srch_destination_type_id. This is expected as each destination would have an associated type; for example, vacation spot, city, etc.
+
+- duration is also positively correlated with hotel_continent which means certain continents are preferred for longer duration of stay.
+
+- srch_rm_cnt has a very strong correlation with srch_adults_cnt, and to an extent, with srch_children_cnt also. This is expected as people tend to take rooms based on how many families/ couples are there.
+
 
 ## 2. Hotel_Baseline_Recommender.ipynb
 The two main families of Recommendation system are Content-Based and Collaborative-Filtering models. Collaborative filtering methods are based on similarity from users and items interaction and content-based filtering methods calculate the similarity of attributes of an items and items. 
