@@ -4,7 +4,7 @@ This project is conducting under the supervision of Omar Nada at the Sharpest Mi
 
 # Introduction and Motivation
 
-One of the first things to do while planning a trip is to book a good place to stay. Booking a hotel online can be an overwhelming task with thousands of hotels to choose from, for every destination. Motivated by the importance of these situations, we decided to work on the task of recommending hotels to users. We used Expedia’s hotel recommendation dataset, which has a variety of features that helped us achieve a deep understanding of the process that makes a user choose certain hotels over others. The aim of this project is to to use different recommendation models -2 collaborative techniques and 1 hybrid technique. 
+One of the first things to do while planning a trip is to book a good place to stay. Booking a hotel online can be an overwhelming task with thousands of hotels to choose from, for every destination. Motivated by the importance of these situations, we decided to work on the task of recommending hotels to users. We used Expedia’s hotel recommendation dataset, which has a variety of features that helped us achieve a deep understanding of the process that makes a user choose certain hotels over others. The aim of this project is to to use different recommendation models such as collaborative techniques and hybrid technique. 
 
 
 # Dataset
@@ -65,3 +65,26 @@ presents a new framework for recommandation tasks, which combines the advantages
 The wide and deep learning has two individual components. The wide network is a linear estimator or a single layer feed-forward network which assigns weights to each features and adds bias to them to model the matrix factorization method, as illustrated in above figure (left). These feature set includes raw input features and transformed. The deep component is a feed-forward neural network, as shown in above figure (right). The high dimensional categorical features are first convert into a low dimensional and dense real-valued vector, often referred as embeddings. The embedding vectors are initialized randomly and then the values are trained to minimize the final loss function. Then they are fed into the hidden layers with feed forward step. By jointly training the wide and deep network, it takes the weighted sum of the outputs from both wide model and deep model as the prediction value. However, we implemented the wide and deep model by using [shuoranly
 /
 DeepCTR-1](https://github.com/shuoranly/DeepCTR-1) package.
+
+## 5. Hotel_Deep_Factorization_Machine_Recommender.ipynb 
+As an extension of the Wide and Deep Learning approach, [DeepFM: A Factorization-Machine Based Neural Network for CTR Prediction](https://arxiv.org/pdf/1703.04247.pdf)is an end-to-end model that seamlessly integrates Factorization Machine (the wide component) and Multi-Layer Perceptron (the deep component). Compared to the Wide and Deep Model from Google, DeepFM does not require tedious feature engineering.
+
+
+<img src="https://user-images.githubusercontent.com/26486681/112199932-edd95f80-8bcb-11eb-90ce-7922c47b3e88.png" width="1000" />     
+
+Wide & deep architecture of the DeepFM framework ( figure left). The wide and deep component share the same input raw feature vector, which enables DeepFM to learn low-and high-order feature interactions simultaneously from the input raw features. The wide component of DeepFM is an FM layer and the Deep Component of DeepFM can be any neural network. 
+
+## 6. Making Recommendations 
+Finally, we recommended top 5 hotel cluster each of the users. The following table, shows the recommendation for user_id= 1048.
+
+<!-- TABLE_GENERATE_START -->
+
+| User ID       | Hotel Cluster (item_id) |
+| ------------- | ------------- |
+| User_id 1048 recommended  | hotel cluster:  45 |
+| User_id 1048 recommended  | hotel cluster:  17 |
+| User_id 1048 recommended  | hotel cluster:  40 |
+| User_id 1048 recommended  | hotel cluster:  11 |
+| User_id 1048 recommended  | hotel cluster:  98 |
+
+<!-- TABLE_GENERATE_END -->
