@@ -81,6 +81,11 @@ As an extension of the Wide and Deep Learning approach, [DeepFM: A Factorization
 
 Wide & deep architecture of the DeepFM framework ( figure left). The wide and deep component share the same input raw feature vector, which enables DeepFM to learn low-and high-order feature interactions simultaneously from the input raw features. The wide component of DeepFM is an FM layer and the Deep Component of DeepFM can be any neural network. 
 
+## 6. Evaluation
+Mean Absolute Error (MAE)
+
+
+
 ## 6. Making Recommendations 
 Finally, we recommended top 5 hotel cluster each of the users. The following table, shows the recommendation for user_id= 1048.
 
