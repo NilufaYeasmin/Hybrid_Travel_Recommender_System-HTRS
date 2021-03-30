@@ -84,10 +84,14 @@ Wide & deep architecture of the DeepFM framework ( figure left). The wide and de
 ## 6. Evaluation Metrics for Recommender Systems
 There are many methods for evaluating a Recommender Systems, but in this research, the model performance is judged by the most commonly used measures.
 
-•	Mean Absolute Error (MAE)- The mean of the absolute value of the errors   
+•	Mean Absolute Error (MAE)- The mean of the absolute value of the errors.   
+
 •	Mean Squared Error (MSE)- The mean of the squared errors. 
-•	Root Mean Squared Error (RMSE) - The square root of the mean of the squared errors
-•	Area under the ROC Curve (AUC) - AUC measures the entire two-dimensional area underneath the entire ROC curve
+
+•	Root Mean Squared Error (RMSE) - The square root of the mean of the squared errors. 
+
+•	Area under the ROC Curve (AUC) - AUC measures the entire two-dimensional area underneath the entire ROC curve. 
+
 • Precision and recall are binary metrics used to evaluate models with binary output. 
 
 
