@@ -81,9 +81,14 @@ As an extension of the Wide and Deep Learning approach, [DeepFM: A Factorization
 
 Wide & deep architecture of the DeepFM framework ( figure left). The wide and deep component share the same input raw feature vector, which enables DeepFM to learn low-and high-order feature interactions simultaneously from the input raw features. The wide component of DeepFM is an FM layer and the Deep Component of DeepFM can be any neural network. 
 
-## 6. Evaluation
-Mean Absolute Error (MAE)
+## 6. Evaluation Metrics for Recommender Systems
+There are many methods for evaluating a Recommender Systems, but in this research, the model performance is judged by the most commonly used measures.
 
+•	Mean Absolute Error (MAE)- The mean of the absolute value of the errors   
+•	Mean Squared Error (MSE)- The mean of the squared errors. 
+•	Root Mean Squared Error (RMSE) - The square root of the mean of the squared errors
+•	Area under the ROC Curve (AUC) - AUC measures the entire two-dimensional area underneath the entire ROC curve
+• Precision and recall are binary metrics used to evaluate models with binary output. 
 
 
 ## 6. Making Recommendations 
