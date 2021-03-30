@@ -92,10 +92,11 @@ There are many methods for evaluating a Recommender Systems, but in this researc
 
 •	Area under the ROC Curve (AUC) - AUC measures the entire two-dimensional area underneath the entire ROC curve. 
 
-• Precision and recall are binary metrics used to evaluate models with binary output. 
+• Precision and Recall are binary metrics used to evaluate models with binary output. Thus we need a way to translate our numerical problem (ratings usually from 1 to 5) into a binary problem (relevant and not relevant items). To do the translation we will assume that any true rating above 3.5 corresponds to a relevant item and any true rating below 3.5 is irrelevant. We are most likely interested in recommending top-N items to the user. So it makes more sense to compute precision and recall metrics in the first N items instead of all the items. Thus the notion of precision and recall at k where k is a user definable integer that is set by the user to match the top-N recommendations objective.
 
 
-## 6. Making Recommendations 
+
+## 7. Making Recommendations 
 Finally, we recommended top 5 hotel cluster each of the users. The following table, shows the recommendation for user_id= 1048.
 
 <!-- TABLE_GENERATE_START -->
