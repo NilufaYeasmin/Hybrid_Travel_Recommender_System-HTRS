@@ -94,6 +94,11 @@ There are many methods for evaluating a Recommender Systems, but in this researc
 
 • Precision and Recall are binary metrics used to evaluate models with binary output. Thus we need a way to translate our numerical problem (ratings usually from 1 to 5) into a binary problem (relevant and not relevant items). To do the translation we will assume that any true rating above 3.5 corresponds to a relevant item and any true rating below 3.5 is irrelevant. We are most likely interested in recommending top-N items to the user. So it makes more sense to compute precision and recall metrics in the first N items instead of all the items. Thus the notion of precision and recall at k where k is a user definable integer that is set by the user to match the top-N recommendations objective.
 
+• P@K - Precision at k is the proportion of recommended items in the top-k set that are relevant. 
+
+• R@K - Recall at k is the proportion of relevant items found in the top-k recommendations.
+
+
 
 
 ## 7. Making Recommendations 
