@@ -82,12 +82,14 @@ As an extension of the Wide and Deep Learning approach, [DeepFM: A Factorization
 Wide & deep architecture of the DeepFM framework ( figure left). The wide and deep component share the same input raw feature vector, which enables DeepFM to learn low-and high-order feature interactions simultaneously from the input raw features. The wide component of DeepFM is an FM layer and the Deep Component of DeepFM can be any neural network. 
 
 ## 6. Evaluation Metrics for Recommender Systems
-There are many methods for evaluating a Recommender Systems, but in this research, the model performance is judged by the most commonly used measures.
+The workflow of recommendation system is given below so that we can understand how evaluation metrics comes into play. 
 
 
 
 ![Evaluation](https://user-images.githubusercontent.com/26486681/113314694-6d001f00-92c1-11eb-8b05-1a375153684a.png)
 
+
+There are many methods for evaluating a Recommender Systems, but in this research, the model performance is judged by the most commonly used measures.
 
 
 •	Mean Absolute Error (MAE)- The mean of the absolute value of the errors.   
