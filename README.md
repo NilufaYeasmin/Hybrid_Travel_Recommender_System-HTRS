@@ -98,6 +98,8 @@ There are many methods for evaluating a Recommender Systems, but in this researc
 
 • R@K - Recall at k is the proportion of relevant items found in the top-k recommendations.
 
+• MRR (Mean Reciprocal Rank) - Average reciprocal hit ratio (ARHR). The relevance score is either 0 or 1, for items not bought or bought (not clicked or clicked, etc.).
+
 
 
 
