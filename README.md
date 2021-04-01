@@ -81,7 +81,37 @@ As an extension of the Wide and Deep Learning approach, [DeepFM: A Factorization
 
 Wide & deep architecture of the DeepFM framework ( figure left). The wide and deep component share the same input raw feature vector, which enables DeepFM to learn low-and high-order feature interactions simultaneously from the input raw features. The wide component of DeepFM is an FM layer and the Deep Component of DeepFM can be any neural network. 
 
-## 6. Making Recommendations 
+## 6. Evaluation Metrics for Recommender Systems
+The workflow of recommendation system is given below so that we can understand how evaluation metrics comes into play. 
+
+
+
+![Evaluation](https://user-images.githubusercontent.com/26486681/113314694-6d001f00-92c1-11eb-8b05-1a375153684a.png)
+
+
+There are many methods for evaluating a Recommender Systems, but in this research, the model performance is judged by the most commonly used measures.
+
+
+•	Mean Absolute Error (MAE)- The mean of the absolute value of the errors.   
+
+•	Mean Squared Error (MSE)- The mean of the squared errors. 
+
+•	Root Mean Squared Error (RMSE) - The square root of the mean of the squared errors. 
+
+•	Area under the ROC Curve (AUC) - AUC measures the entire two-dimensional area underneath the entire ROC curve. 
+
+• Precision and Recall are binary metrics used to evaluate models with binary output. Thus we need a way to translate our numerical problem (ratings usually from 1 to 5) into a binary problem (relevant and not relevant items). To do the translation we will assume that any true rating above 3.5 corresponds to a relevant item and any true rating below 3.5 is irrelevant. We are most likely interested in recommending top-N items to the user. So it makes more sense to compute precision and recall metrics in the first N items instead of all the items. Thus the notion of precision and recall at k where k is a user definable integer that is set by the user to match the top-N recommendations objective.
+
+• P@K - Precision at k is the proportion of recommended items in the top-k set that are relevant. 
+
+• R@K - Recall at k is the proportion of relevant items found in the top-k recommendations.
+
+• MRR (Mean Reciprocal Rank) - Average reciprocal hit ratio (ARHR). The relevance score is either 0 or 1, for items not bought or bought (not clicked or clicked, etc.).
+
+
+
+
+## 7. Making Recommendations 
 Finally, we recommended top 5 hotel cluster each of the users. The following table, shows the recommendation for user_id= 1048.
 
 <!-- TABLE_GENERATE_START -->
