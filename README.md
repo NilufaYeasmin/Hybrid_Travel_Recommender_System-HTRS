@@ -84,6 +84,12 @@ Wide & deep architecture of the DeepFM framework ( figure left). The wide and de
 ## 6. Evaluation Metrics for Recommender Systems
 There are many methods for evaluating a Recommender Systems, but in this research, the model performance is judged by the most commonly used measures.
 
+
+
+![Evaluation](https://user-images.githubusercontent.com/26486681/113314694-6d001f00-92c1-11eb-8b05-1a375153684a.png)
+
+
+
 •	Mean Absolute Error (MAE)- The mean of the absolute value of the errors.   
 
 •	Mean Squared Error (MSE)- The mean of the squared errors. 
